@@ -18,13 +18,13 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: blue;
+  background-color: #0099cc;
 }
 
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,12 +32,12 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #99e6ff;
   color: black;
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
+  background-color: #007399;
   color: white;
 }
 
@@ -58,9 +58,9 @@ body {
 
 /* Footer */
 .footer {
-  padding: 10px;
-  text-align: center;
+  padding: 2px;
   background: #ddd;
+  font-size: 12px;
 }
 
 </style>
@@ -75,10 +75,11 @@ body {
 
 <div id="navbar">
   <a class="active" href="index.html">Domov</a>
+  <a href="zacetki.html">Začetki</a>
   <a href="prva.html">Prva generacije</a>
   <a href="druga.html">Druga generacija</a>
   <a href="tretja.html">Tretja generacija</a>
-  <a href="cetrta.html">Četrta generacija</a>
+  <a href="četrta.html">Četrta generacija</a>
   <a href="peta.html">Peta generacija</a>
   <a href="avtorji.html">Avtorji</a>
 </div>
@@ -86,12 +87,13 @@ body {
 <div class="content">
  <p> Potovanje skozi zgodovino računalnikov se začne na tem mestu. </p>
 <p> Na tem spletnem mestu se boste sprehodili skozi vse generacije razvoja računalnikov od prve generacije do pete.</p>
+<p> Kot se vse začne na začetku se tudi na tej strani začne vse na začetku. Zato klikni na zavihek <a href="zacetki.html">Začetki.</a> </p>
 
 </div>
 
 
 <div class="footer">
-  <h2>Noga</h2>
+  <p style="text-align:right">Zgodovina razvoja računalnikov. <a href="viri-in-literatura.html">Viri in literatura</a></p>
 </div>
 <script>
 window.onscroll = function() {myFunction()};
@@ -109,3 +111,4 @@ function myFunction() {
 </script>
 
 </body>
+</html>
