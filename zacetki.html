@@ -1,69 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Zgodovina računalnika - Začetki</title>
+<title>Zgodovina računalnika</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-  font-size: 17px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/* Footer */
-.footer {
-  padding: 10px;
-  text-align: center;
-  background: #ddd;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -75,6 +15,7 @@ body {
 
 <div id="navbar">
   <a class="active" href="index.html">Domov</a>
+  <a href="zacetki.html">Začetki</a>
   <a href="prva.html">Prva generacije</a>
   <a href="druga.html">Druga generacija</a>
   <a href="tretja.html">Tretja generacija</a>
@@ -84,27 +25,44 @@ body {
 </div>
 
 <div class="content">
- <p> Potovanje skozi zgodovino računalnikov se začne na tem mestu. </p>
-<p> Na tem spletnem mestu se boste sprehodili skozi vse generacije razvoja računalnikov od prve generacije do pete.
+ <div class="timeline">
+ <h1>Začetki razvoja računalnikov</h1>
+  <div class="container left">
+    <div class="besedilo_na_premici">
+      <h2>Abakus</h2>
+	  <p>Abakus je trenutno najstarejša digitalna računska naprava. Je preprost računski pripomoček. Na sebi ima nanizane kroglice katere se da premikati levo in desno in se z njimi na tak način d aseštevati in odštevati.</p>
+      <img id="myImg" src="http://wiki.fmf.uni-lj.si/images/b/b5/Abakus.jpg" style="width:auto;high:auto;">
+	</div>
+  </div>
+  <div class="container right">
+    <div class="besedilo_na_premici">
+      <h2>Logaritemsko računalo</h2>
+      <p>Izhaja iz 2. polovice 17. stoletja in je preprosto analogno računalo podobno ravnilu, ki je po navadi sestavljeno iz treh vpetih umerjenih tračnih letev in drsečega okvirja. Deluje na osnovi logaritmov, ki jih je izumil Škot John Napier (1550-1617). Za razliko od drugih mehanskih računal, ki so digitalni, je logaritemsko računalo analogni računalnik.</p>
+      <img id="myImg" src="img/logaritemsko_racunalo.jpg" style="width:220px;high:160px;">
+	</div></div>
+	<div class="container left">
+	<div class="besedilo_na_premici">
+      <h2>Pascalov seštevalni stroj</h2>
+	  <p>Prvi stroj, ki ga je leta 1642 naredil veliki francoski filozof, matematik in fizik <u>Blaise Pascal</u> (1623-1662). Stroj je uporabljal osnovne aritmetične operacije. Za predstavitev desetiških števil je uporabljal zobata kolesa z desetimi zobmi in mehanizem za prenos enote na naslednje kolo po vsakem polnem obratu. Imel je dve skupini s šestimi zobatimi kolesi. Ena je služila kot akomulator (rezultati operacij se "akomulirajo" v njem), druga pa za vnašanje šestmestnega števila, ki ga je uporabnik želel prišteti ali odšteti od tistega v akomulatorju. Pogon stroja je bil seveda ročen s pomočjo posebne ročice.
+Lahko sešteva 5-mestna števila, kasneje tudi 8-mestna, vendar ne preveč zanesljivo. Izum je ekonomsko propadel, ker je bil drag in namenjen predvsem računovodstvu.</p>
+	<img src="http://wiki.fmf.uni-lj.si/images/2/20/Pascalov_se%C5%A1tevalni_stroj.jpg">
+	</div>
+  </div>
+  <div class="container right">
+	<div class="besedilo_na_premici">
+      <h2>Leibnitzov stroj</h2>
+	  <p>Zasnoval ga je nemški filozof in matematik <u>Gottfried Wilheim Leibnitz</u> (1646-1716) leta 1674 in je prvi stroj, ki uporablja vse štiri osnovne računske operacije. Izdelan je bil šele leta 1694 in je podoben Pascalovemu. Imel je še dve dodatni skupini koles za predstavitev faktorjev oz. deljenca in delitelja. Za množenje in deljenje je izumil element, ki je danes znan kot Leibnizovo kolo. Stroj lahko sešteva in množi 5 do 12-mestna števila, produkt mora biti do 16 mest, potrebno pa ga je poganjati z ročico. Pri tem uporablja mehanizem za prenos pri seštevanju. V praksi je bilo delovanje Leibnitzovega stroja nezanesljivo. Resnično uporabni stroji so se pojavili šele v drugi polovici osemnajstega stoletja.</p>
+	<img src="">
+	</div>
+  </div>
+
+
 </div>
 
 
 <div class="footer">
-  <h2>Footer</h2>
+  <p style="text-align:right">Zgodovina razvoja računalnikov. <a href="viri-in-literatura.html">Viri in literatura</a></p>
 </div>
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
+</html>
